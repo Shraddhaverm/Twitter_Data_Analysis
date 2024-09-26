@@ -1,0 +1,28 @@
+ Instructions to Use the System
+To run the code and query the data on your computer, follow these steps:
+
+Environment Setup:
+
+.Ensure you have Python installed on your machine. If you  don’t have it installed, download and install it from the  official Python website.
+.Install the pandas library using the command:
+      pip install pandas
+2.Create a Python Script:
+
+Create a new Python script (e.g., tweet_analysis.py), and copy the code provided above into this file.
+Modify File Path:
+
+3.Update the file_path variable with the correct path to your TSV file.
+Query the Data:
+
+At the bottom of the script, you can call the functions like so:
+term = "music"  # Example search term
+print(count_tweets_per_day(term))
+print(unique_users_count(term))
+print(average_likes(term))
+print(tweets_by_place(term))
+print(tweets_times_of_day(term))
+print(top_user(term))
+
+4.Design Choices
+      1.Using pandas: I chose pandas because it provides              powerful data manipulation capabilities, making it             easy to filter and aggregate the data.
+      2. Functions: Each query is encapsulated in a separate          function, allowing for modularity and reusability.          You can easily call these functions with different          search terms as needed.
